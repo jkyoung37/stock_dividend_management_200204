@@ -27,6 +27,9 @@ namespace stock_div.Models.DTO
         [Required]
         public string Shares { get; set; }
 
+        [Column("user")]
+        public string User { get; set; }
+
         [Column("create_at")]
         public DateTime CreateAt { get; set; }
 

@@ -21,7 +21,18 @@ namespace stock_div
         {
             // TODO: This line of code loads data into the 'stockDataSet.Stocks' table. You can move, or remove it, as needed.
             this.stocksTableAdapter.Fill(this.stockDataSet.Stocks);
+            setRowNumber(this.dataGridView1);
 
+        }
+
+        private void setRowNumber(DataGridView dgv)
+        {
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
+            }
+            dgv.AutoResizeRowHeadersWidth(
+                                 DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
     }
 }

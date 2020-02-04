@@ -222,6 +222,10 @@
     <Compile Include="Migrations\202002040318043_stocks1.designer.cs">
       <DependentUpon>202002040318043_stocks1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002040343548_stocks2.cs" />
+    <Compile Include="Migrations\202002040343548_stocks2.designer.cs">
+      <DependentUpon>202002040343548_stocks2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DTO\Stocks.cs" />
     <Compile Include="Models\StockDbContext.cs" />
@@ -250,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002040318043_stocks1.resx">
       <DependentUpon>202002040318043_stocks1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002040343548_stocks2.resx">
+      <DependentUpon>202002040343548_stocks2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
