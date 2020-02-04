@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_history = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -123,12 +124,14 @@
             // symbolDataGridViewTextBoxColumn
             // 
             this.symbolDataGridViewTextBoxColumn.DataPropertyName = "symbol";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.symbolDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.symbolDataGridViewTextBoxColumn.HeaderText = "銘柄";
             this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
             this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
             this.symbolDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.symbolDataGridViewTextBoxColumn.Width = 200;
+            this.symbolDataGridViewTextBoxColumn.Width = 150;
             // 
             // priceDataGridViewTextBoxColumn
             // 
@@ -138,7 +141,7 @@
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
             this.priceDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.priceDataGridViewTextBoxColumn.Width = 200;
+            this.priceDataGridViewTextBoxColumn.Width = 160;
             // 
             // sharesDataGridViewTextBoxColumn
             // 
@@ -152,7 +155,7 @@
             // 
             // create_at
             // 
-            this.create_at.DataPropertyName = "create_at";
+            this.create_at.DataPropertyName = "createat";
             this.create_at.HeaderText = "取得年度";
             this.create_at.MinimumWidth = 6;
             this.create_at.Name = "create_at";

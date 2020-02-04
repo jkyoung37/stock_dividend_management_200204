@@ -43,6 +43,7 @@ namespace stock_div
             }
 
             int signCnt = con.Users.Where(x => x.Email == userId).Count();
+
             if (signCnt == 1)
             {
                 MessageBox.Show(Messages.YES_SIGN_MSG);
