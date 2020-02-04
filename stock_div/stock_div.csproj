@@ -206,25 +206,13 @@
     <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202002030928339_user.cs" />
-    <Compile Include="Migrations\202002030928339_user.designer.cs">
-      <DependentUpon>202002030928339_user.cs</DependentUpon>
+    <Compile Include="Migrations\202002041658018_Initial.cs" />
+    <Compile Include="Migrations\202002041658018_Initial.designer.cs">
+      <DependentUpon>202002041658018_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202002030929434_user1.cs" />
-    <Compile Include="Migrations\202002030929434_user1.designer.cs">
-      <DependentUpon>202002030929434_user1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002040309253_stocks.cs" />
-    <Compile Include="Migrations\202002040309253_stocks.designer.cs">
-      <DependentUpon>202002040309253_stocks.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002040318043_stocks1.cs" />
-    <Compile Include="Migrations\202002040318043_stocks1.designer.cs">
-      <DependentUpon>202002040318043_stocks1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002040343548_stocks2.cs" />
-    <Compile Include="Migrations\202002040343548_stocks2.designer.cs">
-      <DependentUpon>202002040343548_stocks2.cs</DependentUpon>
+    <Compile Include="Migrations\202002041703072_Initial1.cs" />
+    <Compile Include="Migrations\202002041703072_Initial1.designer.cs">
+      <DependentUpon>202002041703072_Initial1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DTO\Stocks.cs" />
@@ -243,20 +231,11 @@
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002030928339_user.resx">
-      <DependentUpon>202002030928339_user.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002041658018_Initial.resx">
+      <DependentUpon>202002041658018_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002030929434_user1.resx">
-      <DependentUpon>202002030929434_user1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002040309253_stocks.resx">
-      <DependentUpon>202002040309253_stocks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002040318043_stocks1.resx">
-      <DependentUpon>202002040318043_stocks1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002040343548_stocks2.resx">
-      <DependentUpon>202002040343548_stocks2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002041703072_Initial1.resx">
+      <DependentUpon>202002041703072_Initial1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -305,6 +284,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

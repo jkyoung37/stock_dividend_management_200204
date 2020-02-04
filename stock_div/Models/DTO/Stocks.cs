@@ -21,7 +21,7 @@ namespace stock_div.Models.DTO
 
         [Column("price")]
         [Required]
-        public string Price { get; set; }
+        public Decimal Price { get; set; }
 
         [Column("shares")]
         [Required]

@@ -148,13 +148,10 @@ C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.csprojAssemblyReference.cache
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Login_Form.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Main_Form.resources
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.user.resources
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.user1.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Properties.Resources.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.csproj.GenerateResource.cache
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.csproj.CopyComplete
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.exe
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.pdb
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.stocks.resources
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.stocks1.resources
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.stocks2.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.Initial.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.Initial1.resources

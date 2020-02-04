@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,19 +22,12 @@ namespace stock_div
             InitializeComponent();
         }
 
-        private class DataBinding
-        {
-            public string Symbol { get; set; }
-            public string Shares { get; set; }
-            public DateTime CreateAt { get; set; }
-            public string Price { get; set; }
-        }
-
         private void Main_Form_Load(object sender, EventArgs e)
         {
             con = new StockDbContext();
 
-            var query = from c in con.Stocks where c.User == "test@gmail.com"
+            var query = from c in con.Stocks
+                        where c.User == "test@gmail.com"
                         select new DataBinding { Symbol = c.Symbol, Shares = c.Shares, CreateAt = c.CreateAt, Price = c.Price };
 
             this.dataGridView1.DataSource = query.ToList();
@@ -61,7 +55,15 @@ namespace stock_div
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             //Set Font
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-
+            //Show Dollar
+            dgv.Columns[1].DefaultCellStyle.Format = "$0.00";
+        }
+        private class DataBinding
+        {
+            public string Symbol { get; set; }
+            public string Shares { get; set; }
+            public DateTime CreateAt { get; set; }
+            public Decimal Price { get; set; }
         }
     }
 }
