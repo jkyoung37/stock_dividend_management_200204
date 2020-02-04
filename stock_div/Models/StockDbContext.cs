@@ -13,6 +13,7 @@ namespace stock_div.Models
         #region 接続プロパティ
         public DbSet<Users> Users { get; set; }
 
+        public DbSet<Stocks> Stocks { get; set; }
         /// <summary>
         /// 参照するスキーマ。
         /// </summary>

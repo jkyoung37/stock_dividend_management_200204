@@ -16,22 +16,25 @@ namespace stock_div.Models.DTO
         public int Id { get; set; }
 
         [Column("symbol")]
+        [Required]
         public string Symbol { get; set; }
 
         [Column("price")]
+        [Required]
         public string Price { get; set; }
 
-        [Column("Shares")]
+        [Column("shares")]
+        [Required]
         public string Shares { get; set; }
 
         [Column("create_at")]
         public DateTime CreateAt { get; set; }
 
         [Column("delete_at")]
-        public DateTime DeleteAt { get; set; }
+        public DateTime? DeleteAt { get; set; }
 
         [Column("delete_flag")]
-        public int DeleteFlag { get; set; }
+        public int? DeleteFlag { get; set; }
 
     }
 }

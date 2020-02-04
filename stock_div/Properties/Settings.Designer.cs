@@ -22,5 +22,16 @@ namespace stock_div.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Host=localhost;Database=stock;Username=postgres;Password=3633270;Persist Security" +
+            " Info=True")]
+        public string stockConnectionString {
+            get {
+                return ((string)(this["stockConnectionString"]));
+            }
+        }
     }
 }

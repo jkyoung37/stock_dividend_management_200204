@@ -214,12 +214,25 @@
     <Compile Include="Migrations\202002030929434_user1.designer.cs">
       <DependentUpon>202002030929434_user1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002040309253_stocks.cs" />
+    <Compile Include="Migrations\202002040309253_stocks.designer.cs">
+      <DependentUpon>202002040309253_stocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002040318043_stocks1.cs" />
+    <Compile Include="Migrations\202002040318043_stocks1.designer.cs">
+      <DependentUpon>202002040318043_stocks1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DTO\Stocks.cs" />
     <Compile Include="Models\StockDbContext.cs" />
     <Compile Include="Models\DTO\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stockDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +244,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002030929434_user1.resx">
       <DependentUpon>202002030929434_user1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002040309253_stocks.resx">
+      <DependentUpon>202002040309253_stocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002040318043_stocks1.resx">
+      <DependentUpon>202002040318043_stocks1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -252,6 +271,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="stockDataSet.xsc">
+      <DependentUpon>stockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="stockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stockDataSet.xss">
+      <DependentUpon>stockDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

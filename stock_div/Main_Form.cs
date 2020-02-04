@@ -16,5 +16,12 @@ namespace stock_div
         {
             InitializeComponent();
         }
+
+        private void Main_Form_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'stockDataSet.Stocks' table. You can move, or remove it, as needed.
+            this.stocksTableAdapter.Fill(this.stockDataSet.Stocks);
+
+        }
     }
 }
