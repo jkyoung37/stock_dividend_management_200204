@@ -25,7 +25,7 @@ namespace stock_div.Models.DTO
         public DateTime CreateAt { get; set; }
 
         [Column("delete_at")]
-        public DateTime DeleteAt { get; set; }
+        public DateTime? DeleteAt { get; set; }
 
     }
 }

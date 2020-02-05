@@ -29,112 +29,139 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
-            this.pic_box = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_sign = new System.Windows.Forms.Button();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tb_pw = new System.Windows.Forms.TextBox();
             this.tb_id = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pic_box = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.dataView1 = new System.Data.DataView();
             ((System.ComponentModel.ISupportInitialize)(this.pic_box)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pic_box
+            // materialRaisedButton1
             // 
-            this.pic_box.Image = ((System.Drawing.Image)(resources.GetObject("pic_box.Image")));
-            this.pic_box.Location = new System.Drawing.Point(12, 12);
-            this.pic_box.Name = "pic_box";
-            this.pic_box.Size = new System.Drawing.Size(413, 418);
-            this.pic_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pic_box.TabIndex = 0;
-            this.pic_box.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_sign);
-            this.panel1.Controls.Add(this.tb_pw);
-            this.panel1.Controls.Add(this.tb_id);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 436);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(413, 194);
-            this.panel1.TabIndex = 1;
-            // 
-            // btn_sign
-            // 
-            this.btn_sign.Location = new System.Drawing.Point(245, 129);
-            this.btn_sign.Name = "btn_sign";
-            this.btn_sign.Size = new System.Drawing.Size(109, 34);
-            this.btn_sign.TabIndex = 2;
-            this.btn_sign.Text = "Sign In";
-            this.btn_sign.UseVisualStyleBackColor = true;
-            this.btn_sign.Click += new System.EventHandler(this.btn_sign_Click);
+            this.materialRaisedButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.materialRaisedButton1.BackColor = System.Drawing.Color.Transparent;
+            this.materialRaisedButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(216, 107);
+            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(102, 26);
+            this.materialRaisedButton1.TabIndex = 3;
+            this.materialRaisedButton1.Text = "Login";
+            this.materialRaisedButton1.UseVisualStyleBackColor = false;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.btn_sign_Click);
             // 
             // tb_pw
             // 
-            this.tb_pw.Location = new System.Drawing.Point(189, 86);
+            this.tb_pw.Location = new System.Drawing.Point(133, 62);
+            this.tb_pw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_pw.Name = "tb_pw";
             this.tb_pw.PasswordChar = '*';
-            this.tb_pw.Size = new System.Drawing.Size(165, 22);
+            this.tb_pw.Size = new System.Drawing.Size(185, 24);
             this.tb_pw.TabIndex = 1;
             this.tb_pw.Text = "test";
             // 
             // tb_id
             // 
-            this.tb_id.Location = new System.Drawing.Point(189, 43);
+            this.tb_id.Location = new System.Drawing.Point(133, 29);
+            this.tb_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(165, 22);
+            this.tb_id.Size = new System.Drawing.Size(185, 24);
             this.tb_id.TabIndex = 1;
-            this.tb_id.Text = "test";
+            this.tb_id.Text = "test@gmail.com";
             // 
-            // label2
+            // pic_box
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Meiryo UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(61, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 22);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "PASSWORD";
+            this.pic_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_box.Image = ((System.Drawing.Image)(resources.GetObject("pic_box.Image")));
+            this.pic_box.Location = new System.Drawing.Point(0, 61);
+            this.pic_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pic_box.Name = "pic_box";
+            this.pic_box.Size = new System.Drawing.Size(366, 309);
+            this.pic_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_box.TabIndex = 0;
+            this.pic_box.TabStop = false;
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Meiryo UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(140, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.materialRaisedButton1);
+            this.panel2.Controls.Add(this.materialLabel4);
+            this.panel2.Controls.Add(this.materialLabel3);
+            this.panel2.Controls.Add(this.tb_id);
+            this.panel2.Controls.Add(this.tb_pw);
+            this.panel2.Location = new System.Drawing.Point(0, 370);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(366, 148);
+            this.panel2.TabIndex = 2;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.BackColor = System.Drawing.Color.White;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(33, 62);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(94, 22);
+            this.materialLabel4.TabIndex = 0;
+            this.materialLabel4.Text = "Password";
+            this.materialLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.BackColor = System.Drawing.Color.White;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(32, 29);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(95, 23);
+            this.materialLabel3.TabIndex = 0;
+            this.materialLabel3.Text = "Email";
+            this.materialLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 672);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(361, 515);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pic_box);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Login_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Sign In";
             ((System.ComponentModel.ISupportInitialize)(this.pic_box)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pic_box;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_sign;
         private System.Windows.Forms.TextBox tb_pw;
         private System.Windows.Forms.TextBox tb_id;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pic_box;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private System.Windows.Forms.Panel panel2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Data.DataView dataView1;
     }
 }
 

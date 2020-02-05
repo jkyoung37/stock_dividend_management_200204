@@ -155,3 +155,5 @@ C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.pdb
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.Initial.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.Initial1.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.Initial2.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\MaterialSkin.dll

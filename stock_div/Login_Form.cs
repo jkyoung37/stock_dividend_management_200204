@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace stock_div
 {
-    public partial class Login_Form : Form
+    public partial class Login_Form : MaterialSkin.Controls.MaterialForm
     {
 
         private StockDbContext con;
@@ -29,6 +29,9 @@ namespace stock_div
         {
             string userId = tb_id.Text;
             string userPw = tb_pw.Text;
+
+            AutoClosingMessageBox.Show(Messages.SIGNING_MSG,"ログイン", 2000);
+
 
             if (String.IsNullOrEmpty(userId))
             {
@@ -47,6 +50,8 @@ namespace stock_div
             if (signCnt == 1)
             {
                 MessageBox.Show(Messages.YES_SIGN_MSG);
+                Main_Form mainForm = new Main_Form();
+                mainForm.Show();
             }
             else if (signCnt > 1)
             {

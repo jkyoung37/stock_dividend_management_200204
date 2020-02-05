@@ -65,5 +65,10 @@ namespace stock_div
             public DateTime CreateAt { get; set; }
             public Decimal Price { get; set; }
         }
+
+        private void btn_history_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
