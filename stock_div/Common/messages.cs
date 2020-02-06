@@ -16,6 +16,9 @@ namespace stock_div.Common
         public static string YES_SIGN_MSG = "ログインができました。";
         public static string NO_SIGN_MSG = "ログインが失敗しました。";
         public static string NO_SIGN_DUP_MSG = "ログインユーザーが重複しています。";
+
+        public static string CLOSE_MSG = "Do you really want to exit?";
+
         #endregion
     }
 }

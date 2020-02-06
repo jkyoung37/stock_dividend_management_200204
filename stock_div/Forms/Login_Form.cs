@@ -1,7 +1,5 @@
-﻿using Npgsql;
-using stock_div.Common;
+﻿using stock_div.Common;
 using stock_div.Models;
-using stock_div.Models.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,26 +10,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace stock_div
+namespace stock_div.Forms
 {
-    public partial class Login_Form : MaterialSkin.Controls.MaterialForm
+    public partial class Login_Form : Form
     {
-
         private StockDbContext con;
 
         public Login_Form()
         {
-            con = new StockDbContext();
             InitializeComponent();
+            con = new StockDbContext();
         }
 
-        private void btn_sign_Click(object sender, EventArgs e)
+        private void btn_login_Click(object sender, EventArgs e)
         {
             string userId = tb_id.Text;
             string userPw = tb_pw.Text;
-
-            AutoClosingMessageBox.Show(Messages.SIGNING_MSG,"ログイン", 2000);
-
+            AutoClosingMessageBox.Show(Messages.SIGNING_MSG, "ログイン", 2000);
 
             if (String.IsNullOrEmpty(userId))
             {
@@ -50,8 +45,8 @@ namespace stock_div
             if (signCnt == 1)
             {
                 MessageBox.Show(Messages.YES_SIGN_MSG);
-                Main_Form mainForm = new Main_Form();
-                mainForm.Show();
+                Login_Form selectForm = new Login_Form();
+                selectForm.Show();
             }
             else if (signCnt > 1)
             {
@@ -63,8 +58,19 @@ namespace stock_div
                 MessageBox.Show(Messages.NO_SIGN_MSG);
                 return;
             }
+        }
 
-
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(Messages.CLOSE_MSG, "", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
