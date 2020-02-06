@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_signup = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tb_id = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -41,30 +41,31 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuThinButton22
+            // btn_signup
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 3;
-            this.bunifuThinButton22.ActiveCornerRadius = 1;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DimGray;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Sign Up";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 1;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.DimGray;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DimGray;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(68, 238);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(144, 54);
-            this.bunifuThinButton22.TabIndex = 1;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_signup.ActiveBorderThickness = 3;
+            this.btn_signup.ActiveCornerRadius = 1;
+            this.btn_signup.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btn_signup.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_signup.ActiveLineColor = System.Drawing.Color.DimGray;
+            this.btn_signup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btn_signup.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_signup.BackgroundImage")));
+            this.btn_signup.ButtonText = "Sign Up";
+            this.btn_signup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_signup.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signup.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_signup.IdleBorderThickness = 1;
+            this.btn_signup.IdleCornerRadius = 1;
+            this.btn_signup.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_signup.IdleForecolor = System.Drawing.SystemColors.Window;
+            this.btn_signup.IdleLineColor = System.Drawing.Color.DimGray;
+            this.btn_signup.Location = new System.Drawing.Point(68, 238);
+            this.btn_signup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_signup.Name = "btn_signup";
+            this.btn_signup.Size = new System.Drawing.Size(144, 54);
+            this.btn_signup.TabIndex = 1;
+            this.btn_signup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
             // 
             // bunifuCustomLabel2
             // 
@@ -198,7 +199,7 @@
             this.ClientSize = new System.Drawing.Size(442, 365);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.bunifuThinButton22);
+            this.Controls.Add(this.btn_signup);
             this.Controls.Add(this.btn_login);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -212,7 +213,7 @@
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_signup;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_id;

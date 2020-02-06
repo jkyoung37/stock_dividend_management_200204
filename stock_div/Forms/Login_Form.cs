@@ -15,7 +15,6 @@ namespace stock_div.Forms
     public partial class Login_Form : Form
     {
         private StockDbContext con;
-
         public Login_Form()
         {
             InitializeComponent();
@@ -71,6 +70,14 @@ namespace stock_div.Forms
             {
                 return;
             }
+        }
+
+        private void btn_signup_Click(object sender, EventArgs e)
+        {
+            SignUp_Form signUpForm = new SignUp_Form(con);
+            signUpForm.Show();
+            this.Hide();
+            Utilities.PreviousPage = this;
         }
     }
 }

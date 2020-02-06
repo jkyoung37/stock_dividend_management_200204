@@ -18,7 +18,8 @@ namespace stock_div.Common
         public static string NO_SIGN_DUP_MSG = "ログインユーザーが重複しています。";
 
         public static string CLOSE_MSG = "Do you really want to exit?";
-
+        public static string REG_MSG = "登録中です。";
+        public static string REG_OK_MSG = "登録が完了しました。";
         #endregion
     }
 }

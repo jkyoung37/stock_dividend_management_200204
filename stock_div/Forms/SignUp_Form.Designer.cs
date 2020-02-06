@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp_Form));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tb_pw = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.tb_id = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.tb_password = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.tb_email = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.tb_lastName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.btn_login = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_close = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.tb_firstName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.btn_reg = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tb_pw);
-            this.panel1.Controls.Add(this.bunifuCustomTextbox2);
-            this.panel1.Controls.Add(this.bunifuCustomTextbox1);
-            this.panel1.Controls.Add(this.tb_id);
+            this.panel1.Controls.Add(this.tb_password);
+            this.panel1.Controls.Add(this.tb_firstName);
+            this.panel1.Controls.Add(this.tb_lastName);
+            this.panel1.Controls.Add(this.tb_email);
             this.panel1.Controls.Add(this.bunifuCustomLabel5);
             this.panel1.Controls.Add(this.bunifuCustomLabel3);
             this.panel1.Controls.Add(this.bunifuCustomLabel4);
@@ -60,32 +60,32 @@
             this.panel1.Size = new System.Drawing.Size(420, 279);
             this.panel1.TabIndex = 3;
             // 
-            // tb_pw
+            // tb_password
             // 
-            this.tb_pw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.tb_pw.BorderColor = System.Drawing.Color.DarkRed;
-            this.tb_pw.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.tb_pw.ForeColor = System.Drawing.Color.White;
-            this.tb_pw.Location = new System.Drawing.Point(52, 222);
-            this.tb_pw.Multiline = true;
-            this.tb_pw.Name = "tb_pw";
-            this.tb_pw.PasswordChar = '*';
-            this.tb_pw.Size = new System.Drawing.Size(306, 38);
-            this.tb_pw.TabIndex = 2;
-            this.tb_pw.Text = "1234";
+            this.tb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.tb_password.BorderColor = System.Drawing.Color.DarkRed;
+            this.tb_password.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tb_password.ForeColor = System.Drawing.Color.White;
+            this.tb_password.Location = new System.Drawing.Point(52, 222);
+            this.tb_password.Multiline = true;
+            this.tb_password.Name = "tb_password";
+            this.tb_password.PasswordChar = '*';
+            this.tb_password.Size = new System.Drawing.Size(306, 38);
+            this.tb_password.TabIndex = 2;
+            this.tb_password.Text = "1234";
             // 
-            // tb_id
+            // tb_email
             // 
-            this.tb_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.tb_id.BorderColor = System.Drawing.Color.DarkRed;
-            this.tb_id.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.tb_id.ForeColor = System.Drawing.Color.White;
-            this.tb_id.Location = new System.Drawing.Point(52, 148);
-            this.tb_id.Multiline = true;
-            this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(306, 38);
-            this.tb_id.TabIndex = 2;
-            this.tb_id.Text = "test@gmail.com";
+            this.tb_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.tb_email.BorderColor = System.Drawing.Color.DarkRed;
+            this.tb_email.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tb_email.ForeColor = System.Drawing.Color.White;
+            this.tb_email.Location = new System.Drawing.Point(52, 148);
+            this.tb_email.Multiline = true;
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(306, 38);
+            this.tb_email.TabIndex = 2;
+            this.tb_email.Text = "test@gmail.com";
             // 
             // bunifuCustomLabel3
             // 
@@ -131,18 +131,19 @@
             this.bunifuCustomLabel4.TabIndex = 0;
             this.bunifuCustomLabel4.Text = "Last Name";
             // 
-            // bunifuCustomTextbox1
+            // tb_lastName
             // 
-            this.bunifuCustomTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.DarkRed;
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.bunifuCustomTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(52, 73);
-            this.bunifuCustomTextbox1.Multiline = true;
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(145, 39);
-            this.bunifuCustomTextbox1.TabIndex = 2;
-            this.bunifuCustomTextbox1.Text = "test_last";
+            this.tb_lastName.AcceptsReturn = true;
+            this.tb_lastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.tb_lastName.BorderColor = System.Drawing.Color.DarkRed;
+            this.tb_lastName.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tb_lastName.ForeColor = System.Drawing.Color.White;
+            this.tb_lastName.Location = new System.Drawing.Point(52, 73);
+            this.tb_lastName.Multiline = true;
+            this.tb_lastName.Name = "tb_lastName";
+            this.tb_lastName.Size = new System.Drawing.Size(145, 39);
+            this.tb_lastName.TabIndex = 2;
+            this.tb_lastName.Text = "test_last";
             // 
             // bunifuCustomLabel5
             // 
@@ -155,69 +156,71 @@
             this.bunifuCustomLabel5.TabIndex = 0;
             this.bunifuCustomLabel5.Text = "First Name";
             // 
-            // bunifuCustomTextbox2
+            // tb_firstName
             // 
-            this.bunifuCustomTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.DarkRed;
-            this.bunifuCustomTextbox2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.bunifuCustomTextbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(213, 73);
-            this.bunifuCustomTextbox2.Multiline = true;
-            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(145, 39);
-            this.bunifuCustomTextbox2.TabIndex = 2;
-            this.bunifuCustomTextbox2.Text = "test_first";
+            this.tb_firstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.tb_firstName.BorderColor = System.Drawing.Color.DarkRed;
+            this.tb_firstName.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tb_firstName.ForeColor = System.Drawing.Color.White;
+            this.tb_firstName.Location = new System.Drawing.Point(213, 73);
+            this.tb_firstName.Multiline = true;
+            this.tb_firstName.Name = "tb_firstName";
+            this.tb_firstName.Size = new System.Drawing.Size(145, 39);
+            this.tb_firstName.TabIndex = 2;
+            this.tb_firstName.Text = "test_first";
             // 
-            // btn_login
+            // btn_reg
             // 
-            this.btn_login.ActiveBorderThickness = 3;
-            this.btn_login.ActiveCornerRadius = 1;
-            this.btn_login.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.btn_login.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_login.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.btn_login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_login.BackgroundImage")));
-            this.btn_login.ButtonText = "Register ";
-            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_login.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_login.IdleBorderThickness = 1;
-            this.btn_login.IdleCornerRadius = 1;
-            this.btn_login.IdleFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_login.IdleForecolor = System.Drawing.SystemColors.Window;
-            this.btn_login.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_login.Location = new System.Drawing.Point(64, 314);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(306, 54);
-            this.btn_login.TabIndex = 4;
-            this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_reg.ActiveBorderThickness = 3;
+            this.btn_reg.ActiveCornerRadius = 1;
+            this.btn_reg.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btn_reg.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_reg.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_reg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btn_reg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_reg.BackgroundImage")));
+            this.btn_reg.ButtonText = "Register ";
+            this.btn_reg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_reg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reg.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_reg.IdleBorderThickness = 1;
+            this.btn_reg.IdleCornerRadius = 1;
+            this.btn_reg.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_reg.IdleForecolor = System.Drawing.SystemColors.Window;
+            this.btn_reg.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_reg.Location = new System.Drawing.Point(64, 314);
+            this.btn_reg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_reg.Name = "btn_reg";
+            this.btn_reg.Size = new System.Drawing.Size(306, 54);
+            this.btn_reg.TabIndex = 4;
+            this.btn_reg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_reg.Click += new System.EventHandler(this.btn_reg_Click);
             // 
-            // btn_close
+            // btn_back
             // 
-            this.btn_close.ActiveBorderThickness = 3;
-            this.btn_close.ActiveCornerRadius = 1;
-            this.btn_close.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.btn_close.ActiveForecolor = System.Drawing.Color.LightGray;
-            this.btn_close.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.btn_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_close.BackgroundImage")));
-            this.btn_close.ButtonText = "↩";
-            this.btn_close.CausesValidation = false;
-            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_close.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_close.IdleBorderThickness = 1;
-            this.btn_close.IdleCornerRadius = 1;
-            this.btn_close.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btn_close.IdleForecolor = System.Drawing.Color.DarkGray;
-            this.btn_close.IdleLineColor = System.Drawing.Color.Transparent;
-            this.btn_close.Location = new System.Drawing.Point(411, 4);
-            this.btn_close.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(38, 42);
-            this.btn_close.TabIndex = 5;
-            this.btn_close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_back.ActiveBorderThickness = 3;
+            this.btn_back.ActiveCornerRadius = 1;
+            this.btn_back.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btn_back.ActiveForecolor = System.Drawing.Color.LightGray;
+            this.btn_back.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btn_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_back.BackgroundImage")));
+            this.btn_back.ButtonText = "↩";
+            this.btn_back.CausesValidation = false;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_back.IdleBorderThickness = 1;
+            this.btn_back.IdleCornerRadius = 1;
+            this.btn_back.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btn_back.IdleForecolor = System.Drawing.Color.DarkGray;
+            this.btn_back.IdleLineColor = System.Drawing.Color.Transparent;
+            this.btn_back.Location = new System.Drawing.Point(411, 4);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(38, 42);
+            this.btn_back.TabIndex = 5;
+            this.btn_back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // SignUp_Form
             // 
@@ -225,8 +228,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(450, 395);
-            this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_reg);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp_Form";
@@ -241,16 +244,16 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_pw;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_id;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_password;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_firstName;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_lastName;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox tb_email;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_login;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_close;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_reg;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_back;
     }
 }
