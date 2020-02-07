@@ -1,6 +1,6 @@
-﻿namespace stock_div
+﻿namespace stock_div.Forms
 {
-    partial class Main_Form
+    partial class History_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History_Form));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.symbolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +39,9 @@
             this.stocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockDataSet = new stock_div.stockDataSet();
             this.stocksTableAdapter = new stock_div.stockDataSetTableAdapters.StocksTableAdapter();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btn_back = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lb_updatetime = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataSet)).BeginInit();
@@ -55,19 +59,19 @@
             this.sharesDataGridViewTextBoxColumn,
             this.create_at});
             this.dataGridView1.DataSource = this.stocksBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1017, 562);
+            this.dataGridView1.Size = new System.Drawing.Size(1017, 648);
             this.dataGridView1.TabIndex = 1;
             // 
             // symbolDataGridViewTextBoxColumn
             // 
             this.symbolDataGridViewTextBoxColumn.DataPropertyName = "symbol";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.symbolDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.symbolDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.symbolDataGridViewTextBoxColumn.HeaderText = "銘柄";
             this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
@@ -119,20 +123,68 @@
             // 
             this.stocksTableAdapter.ClearBeforeFill = true;
             // 
-            // Main_Form
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // btn_back
+            // 
+            this.btn_back.ActiveBorderThickness = 3;
+            this.btn_back.ActiveCornerRadius = 1;
+            this.btn_back.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btn_back.ActiveForecolor = System.Drawing.Color.LightGray;
+            this.btn_back.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btn_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_back.BackgroundImage")));
+            this.btn_back.ButtonText = "Back";
+            this.btn_back.CausesValidation = false;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_back.IdleBorderThickness = 1;
+            this.btn_back.IdleCornerRadius = 1;
+            this.btn_back.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btn_back.IdleForecolor = System.Drawing.Color.White;
+            this.btn_back.IdleLineColor = System.Drawing.Color.Transparent;
+            this.btn_back.Location = new System.Drawing.Point(932, -1);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(87, 42);
+            this.btn_back.TabIndex = 6;
+            this.btn_back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
+            // lb_updatetime
+            // 
+            this.lb_updatetime.AutoSize = true;
+            this.lb_updatetime.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.lb_updatetime.ForeColor = System.Drawing.Color.White;
+            this.lb_updatetime.Location = new System.Drawing.Point(402, 717);
+            this.lb_updatetime.Name = "lb_updatetime";
+            this.lb_updatetime.Size = new System.Drawing.Size(157, 18);
+            this.lb_updatetime.TabIndex = 7;
+            this.lb_updatetime.Text = "bunifuCustomLabel1";
+            // 
+            // History_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 588);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.ClientSize = new System.Drawing.Size(1017, 752);
+            this.Controls.Add(this.lb_updatetime);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Main_Form";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "History_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main_Form";
-            this.Load += new System.EventHandler(this.Main_Form_Load);
+            this.Load += new System.EventHandler(this.History_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -145,5 +197,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sharesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn create_at;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_back;
+        private Bunifu.Framework.UI.BunifuCustomLabel lb_updatetime;
     }
 }

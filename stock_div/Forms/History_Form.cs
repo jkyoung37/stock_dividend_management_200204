@@ -1,4 +1,5 @@
-﻿using stock_div.Models;
+﻿using stock_div.Common;
+using stock_div.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,19 +11,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace stock_div
+namespace stock_div.Forms
 {
-    public partial class Main_Form : Form
+    public partial class History_Form : Form
     {
 
         private StockDbContext con;
 
-        public Main_Form()
+        public History_Form()
         {
             InitializeComponent();
         }
 
-        private void Main_Form_Load(object sender, EventArgs e)
+        private void History_Form_Load(object sender, EventArgs e)
         {
             con = new StockDbContext();
 
@@ -33,8 +34,9 @@ namespace stock_div
             this.dataGridView1.DataSource = query.ToList();
             this.setRowNumber(this.dataGridView1);
             this.setDataGridViewOption(this.dataGridView1);
-        }
+            this.lb_updatetime.Text = "Update : " + DateTime.Now;
 
+        }
 
         private void setRowNumber(DataGridView dgv)
         {
@@ -66,9 +68,10 @@ namespace stock_div
             public Decimal Price { get; set; }
         }
 
-        private void btn_history_Click(object sender, EventArgs e)
+        private void btn_back_Click(object sender, EventArgs e)
         {
-
+            Utilities.PreviousPage.Show();
+            this.Close();
         }
     }
 }

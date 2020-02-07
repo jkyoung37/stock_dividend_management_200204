@@ -8,7 +8,6 @@ namespace stock_div.Common
 {
     class Messages
     {
-        #region ログイン画面
         public static string NON_ID_MSG = "IDを入力してください。";
         public static string NON_PW_MSG = "パスワードを入力してください。";
 
@@ -20,6 +19,10 @@ namespace stock_div.Common
         public static string CLOSE_MSG = "Do you really want to exit?";
         public static string REG_MSG = "登録中です。";
         public static string REG_OK_MSG = "登録が完了しました。";
-        #endregion
+
+        public static string HISTORY_CONNECT_MSG = "履歴データ取得中です。";
+
+
+
     }
 }

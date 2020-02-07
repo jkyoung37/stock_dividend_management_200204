@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;        
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace stock_div.Models.DTO
 {
     [Table("Users")]
     public class Users
-    {   
+    {
         public Users(string email, string password, string last_name, string first_name, DateTime? create_at)
         {
             this.Email = email;
@@ -36,10 +36,10 @@ namespace stock_div.Models.DTO
 
         [Column("password")]
         public string Password { get; set; }
-        
+
         [Column("first_name")]
         public string FirstName { get; set; }
-        
+
         [Column("last_name")]
         public string LastName { get; set; }
 

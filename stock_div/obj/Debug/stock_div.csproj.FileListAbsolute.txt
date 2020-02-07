@@ -146,8 +146,6 @@ C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\System.ValueTuple.xml
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.csprojAssemblyReference.cache
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Login_Form.resources
-C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Main_Form.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Properties.Resources.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.csproj.GenerateResource.cache
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.csproj.CopyComplete
@@ -161,3 +159,5 @@ C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Forms.SignUp_Form.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.Initial3.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Forms.Select_Form.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Forms.History_Form.resources

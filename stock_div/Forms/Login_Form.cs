@@ -1,5 +1,6 @@
 ﻿using stock_div.Common;
 using stock_div.Models;
+using stock_div.Models.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +40,11 @@ namespace stock_div.Forms
                 return;
             }
 
+    
             int signCnt = con.Users.Where(x => x.Email == userId).Count();
+            var user = con.Users.Where(x => x.Email == userId);
+
+
 
             if (signCnt == 1)
             {
