@@ -11,6 +11,10 @@ namespace stock_div.Models.DTO
     [Table("Users")]
     public class Users
     {
+        public Users()
+        {
+        }
+
         public Users(string email, string password, string last_name, string first_name, DateTime? create_at)
         {
             this.Email = email;

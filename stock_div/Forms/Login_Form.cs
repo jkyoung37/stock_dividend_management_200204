@@ -26,7 +26,7 @@ namespace stock_div.Forms
         {
             string userId = tb_id.Text;
             string userPw = tb_pw.Text;
-            AutoClosingMessageBox.Show(Messages.SIGNING_MSG, "ログイン", 2000);
+            AutoClosingMessageBox.Show(Messages.SIGNING_MSG, " ", 2000);
 
             if (String.IsNullOrEmpty(userId))
             {
@@ -40,17 +40,15 @@ namespace stock_div.Forms
                 return;
             }
 
-    
             int signCnt = con.Users.Where(x => x.Email == userId).Count();
-            var user = con.Users.Where(x => x.Email == userId);
-
-
 
             if (signCnt == 1)
             {
+                this.getUserInfo(userId, userPw);
                 MessageBox.Show(Messages.YES_SIGN_MSG);
-                Login_Form selectForm = new Login_Form();
+                Select_Form selectForm = new Select_Form();
                 selectForm.Show();
+                this.Hide();
             }
             else if (signCnt > 1)
             {
@@ -83,6 +81,16 @@ namespace stock_div.Forms
             signUpForm.Show();
             this.Hide();
             Utilities.PreviousPage = this;
+        }
+
+        public void getUserInfo(String userId, String passWord)
+        {
+            var user = con.Users.Where(x => x.Email == userId).FirstOrDefault<Users>();
+
+            if (user != null)
+            {
+                Utilities.User = user;
+            }
         }
     }
 }

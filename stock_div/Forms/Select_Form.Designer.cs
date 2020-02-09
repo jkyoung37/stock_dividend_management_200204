@@ -37,6 +37,7 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_history = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_sign_out = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.lb_name = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,14 +181,14 @@
             this.btn_sign_out.IconVisible = true;
             this.btn_sign_out.IconZoom = 90D;
             this.btn_sign_out.IsTab = false;
-            this.btn_sign_out.Location = new System.Drawing.Point(301, 6);
+            this.btn_sign_out.Location = new System.Drawing.Point(301, 14);
             this.btn_sign_out.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btn_sign_out.Name = "btn_sign_out";
             this.btn_sign_out.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.btn_sign_out.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.btn_sign_out.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_sign_out.selected = false;
-            this.btn_sign_out.Size = new System.Drawing.Size(92, 42);
+            this.btn_sign_out.Size = new System.Drawing.Size(92, 27);
             this.btn_sign_out.TabIndex = 1;
             this.btn_sign_out.Text = "Sign Out";
             this.btn_sign_out.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,12 +196,23 @@
             this.btn_sign_out.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.btn_sign_out.Click += new System.EventHandler(this.btn_sign_out_Click);
             // 
+            // lb_name
+            // 
+            this.lb_name.AutoSize = true;
+            this.lb_name.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_name.Location = new System.Drawing.Point(12, 17);
+            this.lb_name.Name = "lb_name";
+            this.lb_name.Size = new System.Drawing.Size(57, 19);
+            this.lb_name.TabIndex = 2;
+            this.lb_name.Text = "name";
+            // 
             // Select_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(408, 446);
+            this.Controls.Add(this.lb_name);
             this.Controls.Add(this.btn_sign_out);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Transparent;
@@ -208,8 +220,10 @@
             this.Name = "Select_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select_Form";
+            this.Load += new System.EventHandler(this.Select_Form_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -222,5 +236,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_history;
         private Bunifu.Framework.UI.BunifuFlatButton btn_sign_out;
+        private Bunifu.Framework.UI.BunifuCustomLabel lb_name;
     }
 }

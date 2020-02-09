@@ -12,6 +12,6 @@ namespace stock_div.Common
     {
         public static Form PreviousPage;
 
-        public static Users user;
+        public static Users User;
     }
 }
