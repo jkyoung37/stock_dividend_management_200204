@@ -46,11 +46,20 @@ namespace stock_div.Forms
             loginForm.Show();
         }
 
-        public void setForm()
+        private void btn_add_Click(object sender, EventArgs e)
         {
-
+            AutoClosingMessageBox.Show(Messages.HISTORY_CONNECT_MSG, " ", 2000);
+            Add_Form addForm = new Add_Form();
+            addForm.Show();
+            this.Hide();
         }
 
-
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            AutoClosingMessageBox.Show(Messages.HISTORY_CONNECT_MSG, " ", 2000);
+            Delete_Form deleteForm = new Delete_Form();
+            deleteForm.Show();
+            this.Hide();
+        }
     }
 }

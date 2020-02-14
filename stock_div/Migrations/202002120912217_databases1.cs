@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial2 : DbMigration
+    public partial class databases1 : DbMigration
     {
         public override void Up()
         {
-            AlterColumn("public.Users", "delete_at", c => c.DateTime());
+            AddColumn("public.Stocks", "delete_flag", c => c.String());
         }
         
         public override void Down()
         {
-            AlterColumn("public.Users", "delete_at", c => c.DateTime(nullable: false));
+            DropColumn("public.Stocks", "delete_flag");
         }
     }
 }

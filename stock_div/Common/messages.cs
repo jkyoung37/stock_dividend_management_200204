@@ -19,10 +19,13 @@ namespace stock_div.Common
         public static string CLOSE_MSG = "Do you really want to exit?";
         public static string REG_MSG = "登録中です。";
         public static string REG_OK_MSG = "登録が完了しました。";
+        public static string REG_EMPTY_MSG = "値を1件以上、入力してください。";
+
+        public static string DEL_EMPTY_MSG = "値を1件以上、入力してください。";
+        public static string DEL_OK_MSG = "削除が完了しました。";
 
         public static string HISTORY_CONNECT_MSG = "履歴データ取得中です。";
 
-
-
+        public static string NETASSET_NUM_NO_MSG = "数値を入力をしてください。";
     }
 }

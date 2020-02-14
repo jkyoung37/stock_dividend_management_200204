@@ -10,46 +10,38 @@ using System.ComponentModel;
 
 namespace stock_div.Models.DTO
 {
-    [Table("Stocks")]
-    public class Stocks
+    [Table("Dividend")]
+    public class Dividend
     {
-        public Stocks()
+        public Dividend()
         {
         }
 
-        public Stocks(String symbol, Decimal shares, Decimal price)
+        public Dividend(Decimal price)
         {
-            this.Symbol = symbol;
             this.Price = price;
-            this.Shares = shares;
             this.CreateAt = DateTime.Now;
             this.User = Utilities.User.Email;
-            this.DeleteFlag = "0";
         }
+
+        public Dividend(Decimal price, String user)
+        {
+            this.Price = price;
+            this.CreateAt = DateTime.Now;
+            this.User = user;
+        }
+
         [Key]
         [Column("id")]
         public int Id { get; set; }
 
-        [Column("symbol")]
-        [Required]
-        public String Symbol { get; set; }
-
         [Column("price")]
-        [Required]
         public Decimal Price { get; set; }
-
-        [Column("shares")]
-        [Required]
-        public Decimal Shares { get; set; }
 
         [Column("user")]
         public string User { get; set; }
 
         [Column("create_at")]
         public DateTime CreateAt { get; set; }
-
-        [Column("delete_flag")]
-        public string DeleteFlag { get; set; }
-
     }
 }

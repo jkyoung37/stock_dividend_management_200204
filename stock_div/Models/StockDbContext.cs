@@ -14,6 +14,8 @@ namespace stock_div.Models
         public DbSet<Users> Users { get; set; }
 
         public DbSet<Stocks> Stocks { get; set; }
+
+        public DbSet<Dividend> Dividend { get; set; }
         /// <summary>
         /// 参照するスキーマ。
         /// </summary>

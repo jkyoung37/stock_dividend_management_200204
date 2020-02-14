@@ -16,7 +16,7 @@ namespace stock_div
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.Login_Form());
+            Application.Run(new Forms.Asset_Form());
         }
     }
 }

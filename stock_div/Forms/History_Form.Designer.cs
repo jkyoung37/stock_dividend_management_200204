@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History_Form));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.symbolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sharesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.create_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockDataSet = new stock_div.stockDataSet();
             this.stocksTableAdapter = new stock_div.stockDataSetTableAdapters.StocksTableAdapter();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btn_back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lb_updatetime = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.symbolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sharesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.create_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataSet)).BeginInit();
@@ -55,8 +55,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.symbolDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
             this.sharesDataGridViewTextBoxColumn,
+            this.price,
             this.create_at});
             this.dataGridView1.DataSource = this.stocksBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(-1, 58);
@@ -66,48 +66,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1017, 648);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // symbolDataGridViewTextBoxColumn
-            // 
-            this.symbolDataGridViewTextBoxColumn.DataPropertyName = "symbol";
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.symbolDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.symbolDataGridViewTextBoxColumn.HeaderText = "銘柄";
-            this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
-            this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
-            this.symbolDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.symbolDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "買付";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.priceDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // sharesDataGridViewTextBoxColumn
-            // 
-            this.sharesDataGridViewTextBoxColumn.DataPropertyName = "shares";
-            this.sharesDataGridViewTextBoxColumn.HeaderText = "保有株数";
-            this.sharesDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sharesDataGridViewTextBoxColumn.Name = "sharesDataGridViewTextBoxColumn";
-            this.sharesDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sharesDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.sharesDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // create_at
-            // 
-            this.create_at.DataPropertyName = "createat";
-            this.create_at.HeaderText = "取得年度";
-            this.create_at.MinimumWidth = 6;
-            this.create_at.Name = "create_at";
-            this.create_at.ReadOnly = true;
-            this.create_at.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.create_at.Width = 200;
             // 
             // stocksBindingSource
             // 
@@ -166,6 +124,48 @@
             this.lb_updatetime.TabIndex = 7;
             this.lb_updatetime.Text = "bunifuCustomLabel1";
             // 
+            // symbolDataGridViewTextBoxColumn
+            // 
+            this.symbolDataGridViewTextBoxColumn.DataPropertyName = "symbol";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.symbolDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.symbolDataGridViewTextBoxColumn.HeaderText = "Symbol";
+            this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
+            this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
+            this.symbolDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.symbolDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // sharesDataGridViewTextBoxColumn
+            // 
+            this.sharesDataGridViewTextBoxColumn.DataPropertyName = "shares";
+            this.sharesDataGridViewTextBoxColumn.HeaderText = "Shares";
+            this.sharesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sharesDataGridViewTextBoxColumn.Name = "sharesDataGridViewTextBoxColumn";
+            this.sharesDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sharesDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.sharesDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // price
+            // 
+            this.price.DataPropertyName = "price";
+            this.price.HeaderText = "Price Per Share($)";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.price.Width = 160;
+            // 
+            // create_at
+            // 
+            this.create_at.DataPropertyName = "CreateAt";
+            this.create_at.HeaderText = "Date";
+            this.create_at.MinimumWidth = 6;
+            this.create_at.Name = "create_at";
+            this.create_at.ReadOnly = true;
+            this.create_at.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.create_at.Width = 200;
+            // 
             // History_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -193,12 +193,12 @@
         private stockDataSet stockDataSet;
         private System.Windows.Forms.BindingSource stocksBindingSource;
         private stockDataSetTableAdapters.StocksTableAdapter stocksTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn symbolDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sharesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn create_at;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_back;
         private Bunifu.Framework.UI.BunifuCustomLabel lb_updatetime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn symbolDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sharesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn create_at;
     }
 }

@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class databases : DbMigration
     {
         public override void Up()
         {
@@ -13,12 +13,10 @@
                     {
                         id = c.Int(nullable: false, identity: true),
                         symbol = c.String(nullable: false),
-                        price = c.Int(nullable: false),
-                        shares = c.String(nullable: false),
+                        price = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        shares = c.Decimal(nullable: false, precision: 18, scale: 2),
                         user = c.String(),
                         create_at = c.DateTime(nullable: false),
-                        delete_at = c.DateTime(),
-                        delete_flag = c.Int(),
                     })
                 .PrimaryKey(t => t.id);
             
@@ -29,8 +27,10 @@
                         id = c.Int(nullable: false, identity: true),
                         email = c.String(),
                         password = c.String(),
+                        first_name = c.String(),
+                        last_name = c.String(),
                         create_at = c.DateTime(nullable: false),
-                        delete_at = c.DateTime(nullable: false),
+                        delete_at = c.DateTime(),
                     })
                 .PrimaryKey(t => t.id);
             
