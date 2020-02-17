@@ -9,6 +9,7 @@ namespace stock_div.Models.DTO
     class NetAsset
     {
         public string x { get; set; }
-        public Decimal y { get; set; }  
+        public Decimal y { get; set; }
+        public Decimal z { get; set; }
     }
 }

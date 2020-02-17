@@ -30,8 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Form));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -39,14 +44,14 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lb_updatetime = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.symbol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shares = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.create_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -89,10 +94,10 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(1454, 13);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(1504, 4);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(87, 42);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(69, 32);
             this.bunifuThinButton22.TabIndex = 8;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -170,7 +175,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.price2,
-            this.dataGridViewTextBoxColumn4});
+            this.create_at});
             this.dataGridView2.Location = new System.Drawing.Point(800, 52);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -178,53 +183,6 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(750, 387);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "symbol";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Symbol";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "shares";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Shares";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn2.Width = 120;
-            // 
-            // price2
-            // 
-            this.price2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.price2.DataPropertyName = "price";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.price2.DefaultCellStyle = dataGridViewCellStyle1;
-            this.price2.HeaderText = "Price Per Share($)";
-            this.price2.MinimumWidth = 6;
-            this.price2.Name = "price2";
-            this.price2.ReadOnly = true;
-            this.price2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.price2.Width = 145;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "createat";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 124;
             // 
             // bunifuCustomLabel1
             // 
@@ -240,7 +198,9 @@
             // symbol
             // 
             this.symbol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.symbol.HeaderText = "Symbol";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.symbol.DefaultCellStyle = dataGridViewCellStyle5;
+            this.symbol.HeaderText = "SYMBOL";
             this.symbol.MinimumWidth = 6;
             this.symbol.Name = "symbol";
             this.symbol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -249,7 +209,9 @@
             // shares
             // 
             this.shares.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.shares.HeaderText = "Shares";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.shares.DefaultCellStyle = dataGridViewCellStyle6;
+            this.shares.HeaderText = "SHARES";
             this.shares.MinimumWidth = 6;
             this.shares.Name = "shares";
             this.shares.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -259,14 +221,69 @@
             // 
             this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.price.DataPropertyName = "price";
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.price.DefaultCellStyle = dataGridViewCellStyle2;
-            this.price.HeaderText = "Price Per Share($)";
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            dataGridViewCellStyle7.Format = "$C2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.price.DefaultCellStyle = dataGridViewCellStyle7;
+            this.price.HeaderText = "PRICE PER SHARE($)";
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.price.Width = 169;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "symbol";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewTextBoxColumn1.HeaderText = "SYMBOL";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "shares";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn2.HeaderText = "SHARES";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn2.Width = 120;
+            // 
+            // price2
+            // 
+            this.price2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.price2.DataPropertyName = "price";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.price2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.price2.HeaderText = "PRICE PER SHARE";
+            this.price2.MinimumWidth = 6;
+            this.price2.Name = "price2";
+            this.price2.ReadOnly = true;
+            this.price2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.price2.Width = 145;
+            // 
+            // create_at
+            // 
+            this.create_at.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.create_at.DataPropertyName = "createat";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.create_at.DefaultCellStyle = dataGridViewCellStyle4;
+            this.create_at.HeaderText = "DATE";
+            this.create_at.MinimumWidth = 6;
+            this.create_at.Name = "create_at";
+            this.create_at.ReadOnly = true;
+            this.create_at.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.create_at.Width = 124;
             // 
             // Add_Form
             // 
@@ -303,12 +320,12 @@
         private Bunifu.Framework.UI.BunifuCustomLabel lb_updatetime;
         private System.Windows.Forms.DataGridView dataGridView2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn symbol;
         private System.Windows.Forms.DataGridViewTextBoxColumn shares;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn create_at;
     }
 }

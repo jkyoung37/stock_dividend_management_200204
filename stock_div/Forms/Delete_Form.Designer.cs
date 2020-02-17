@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Delete_Form));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_save = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -42,7 +46,7 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.create_at = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,10 +74,10 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(675, 3);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(729, -5);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(87, 42);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(78, 42);
             this.bunifuThinButton22.TabIndex = 8;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -97,7 +101,7 @@
             this.btn_save.IdleFillColor = System.Drawing.Color.Transparent;
             this.btn_save.IdleForecolor = System.Drawing.Color.White;
             this.btn_save.IdleLineColor = System.Drawing.Color.Transparent;
-            this.btn_save.Location = new System.Drawing.Point(675, 446);
+            this.btn_save.Location = new System.Drawing.Point(697, 446);
             this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(87, 42);
@@ -116,13 +120,13 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.price,
-            this.dataGridViewTextBoxColumn4});
+            this.create_at});
             this.dataGridView1.Location = new System.Drawing.Point(12, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(750, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(772, 387);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -141,8 +145,12 @@
             // 
             this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Select.DataPropertyName = "Select";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            dataGridViewCellStyle1.NullValue = false;
+            this.Select.DefaultCellStyle = dataGridViewCellStyle1;
             this.Select.FalseValue = "0";
-            this.Select.HeaderText = "Select";
+            this.Select.HeaderText = "SELECT";
             this.Select.MinimumWidth = 6;
             this.Select.Name = "Select";
             this.Select.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -152,7 +160,9 @@
             // Id
             // 
             this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.Id.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Id.HeaderText = "ID";
             this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
@@ -162,7 +172,9 @@
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "symbol";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Symbol";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn1.HeaderText = "SYMBOL";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -172,10 +184,11 @@
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "shares";
-            dataGridViewCellStyle1.Format = "N0";
-            dataGridViewCellStyle1.NullValue = null;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Shares";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn2.HeaderText = "SHARES";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -185,31 +198,34 @@
             // 
             this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.price.DataPropertyName = "price";
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.price.DefaultCellStyle = dataGridViewCellStyle2;
-            this.price.HeaderText = "Price Per Share($)";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.price.DefaultCellStyle = dataGridViewCellStyle5;
+            this.price.HeaderText = "PRICE PER SHARE";
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.price.Width = 145;
             // 
-            // dataGridViewTextBoxColumn4
+            // create_at
             // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "createat";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 124;
+            this.create_at.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.create_at.DataPropertyName = "createat";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.create_at.DefaultCellStyle = dataGridViewCellStyle6;
+            this.create_at.HeaderText = "DATE";
+            this.create_at.MinimumWidth = 6;
+            this.create_at.Name = "create_at";
+            this.create_at.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.create_at.Width = 124;
             // 
             // Delete_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(782, 494);
+            this.ClientSize = new System.Drawing.Size(805, 501);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.btn_save);
@@ -237,6 +253,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn create_at;
     }
 }

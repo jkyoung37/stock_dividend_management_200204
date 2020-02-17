@@ -163,3 +163,8 @@ C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Forms.Delete_Form.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Forms.Asset_Form.resources
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.database.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.database1.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Migrations.database2.resources
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\HtmlAgilityPack.xml

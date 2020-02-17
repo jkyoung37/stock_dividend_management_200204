@@ -39,14 +39,14 @@ namespace stock_div.Forms
 
             foreach (DataGridViewRow item in dataGridView1.Rows)
             {
-                if (item.Cells[0].Value == null || item.Cells[1].Value == null || item.Cells[1].Value == null)
+                if (item.Cells[0].Value == null || item.Cells[1].Value == null || item.Cells[2].Value == null)
                 {
                     break;
                 }
 
                 String symbol = item.Cells[0].Value.ToString();
                 int shares = Int16.Parse(item.Cells[1].Value.ToString());
-                Decimal price = Decimal.Parse(item.Cells[1].Value.ToString());
+                Decimal price = Decimal.Parse(item.Cells[2].Value.ToString());
                 con.Stocks.Add(new Stocks(symbol, shares, price));
             }
 

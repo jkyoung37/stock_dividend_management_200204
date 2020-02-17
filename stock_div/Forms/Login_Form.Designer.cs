@@ -100,7 +100,7 @@
             this.tb_id.Name = "tb_id";
             this.tb_id.Size = new System.Drawing.Size(307, 38);
             this.tb_id.TabIndex = 2;
-            this.tb_id.Text = "test@gmail.com";
+            this.tb_id.Text = "jkyoung37@gmail.com";
             // 
             // tb_pw
             // 
@@ -114,7 +114,7 @@
             this.tb_pw.PasswordChar = '*';
             this.tb_pw.Size = new System.Drawing.Size(307, 38);
             this.tb_pw.TabIndex = 2;
-            this.tb_pw.Text = "1234";
+            this.tb_pw.Text = "3633270";
             // 
             // panel1
             // 

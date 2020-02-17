@@ -45,7 +45,6 @@ namespace stock_div.Forms
             if (signCnt == 1)
             {
                 this.getUserInfo(userId, userPw);
-                MessageBox.Show(Messages.YES_SIGN_MSG);
                 Select_Form selectForm = new Select_Form();
                 selectForm.Show();
                 this.Hide();

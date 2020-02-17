@@ -123,10 +123,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFcAAAAqCAYAAADGdMdzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABzSURBVGhD7dAxAQAgDMAwxGCAf/5tDRX5esRAzn2zMcqF
-        yoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqFyoXKhcqF
-        yoXKhcqFyoXKhcqFyoXKhcqFymVmPy2+TqvWEO+GAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAEUAAAAgCAYAAABEtLXAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABZSURBVGhD7dAxEQAgAAAhw1jA3f61dPb8CAwUYMy1Dy8p
+        QUqQEqQEKUFKkBKkBClBSpASpAQpQUqQEqQEKUFKkBKkBClBSpASpAQpQUqQEqQEKUFKkPLZ5wKtrnrE
+        DNn37AAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btn_save.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -154,7 +154,7 @@
   <metadata name="price2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dataGridViewTextBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="create_at.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="symbol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

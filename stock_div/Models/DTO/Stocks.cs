@@ -42,7 +42,7 @@ namespace stock_div.Models.DTO
         [Required]
         public Decimal Shares { get; set; }
 
-        [Column("user")]
+        [Column("users")]
         public string User { get; set; }
 
         [Column("create_at")]

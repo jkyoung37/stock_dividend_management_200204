@@ -33,6 +33,8 @@ namespace stock_div.Forms
                         orderby c.CreateAt descending
                         select new DataBinding { Symbol = c.Symbol, Shares = c.Shares, CreateAt = c.CreateAt, Price = c.Price };
 
+            con.Database.Log = Console.WriteLine;
+
             this.dataGridView1.DataSource = query.ToList();
             Utilities.setRowNumber(this.dataGridView1);
             Utilities.setDataGridViewOption(this.dataGridView1);

@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History_Form));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.stocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockDataSet = new stock_div.stockDataSet();
@@ -127,9 +130,9 @@
             // symbolDataGridViewTextBoxColumn
             // 
             this.symbolDataGridViewTextBoxColumn.DataPropertyName = "symbol";
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Meiryo", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.symbolDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.symbolDataGridViewTextBoxColumn.HeaderText = "Symbol";
+            this.symbolDataGridViewTextBoxColumn.HeaderText = "SYMBOL";
             this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
             this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
@@ -139,7 +142,9 @@
             // sharesDataGridViewTextBoxColumn
             // 
             this.sharesDataGridViewTextBoxColumn.DataPropertyName = "shares";
-            this.sharesDataGridViewTextBoxColumn.HeaderText = "Shares";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.sharesDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.sharesDataGridViewTextBoxColumn.HeaderText = "SHARES";
             this.sharesDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sharesDataGridViewTextBoxColumn.Name = "sharesDataGridViewTextBoxColumn";
             this.sharesDataGridViewTextBoxColumn.ReadOnly = true;
@@ -149,7 +154,9 @@
             // price
             // 
             this.price.DataPropertyName = "price";
-            this.price.HeaderText = "Price Per Share($)";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.price.DefaultCellStyle = dataGridViewCellStyle3;
+            this.price.HeaderText = "PIRCE PER SHARE";
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.ReadOnly = true;
@@ -159,7 +166,9 @@
             // create_at
             // 
             this.create_at.DataPropertyName = "CreateAt";
-            this.create_at.HeaderText = "Date";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Meiryo", 7.8F);
+            this.create_at.DefaultCellStyle = dataGridViewCellStyle4;
+            this.create_at.HeaderText = "DATE";
             this.create_at.MinimumWidth = 6;
             this.create_at.Name = "create_at";
             this.create_at.ReadOnly = true;
