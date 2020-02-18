@@ -209,6 +209,12 @@
     <Compile Include="Common\AutoClosingMessageBox.cs" />
     <Compile Include="Common\Messages.cs" />
     <Compile Include="Common\Utilities.cs" />
+    <Compile Include="Forms\Div_Add_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Div_Add_Form.Designer.cs">
+      <DependentUpon>Div_Add_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Asset_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DTO\AddDataBinding.cs" />
     <Compile Include="Models\DTO\DataBinding.cs" />
+    <Compile Include="Models\DTO\DividendDTO.cs" />
     <Compile Include="Models\DTO\NetAsset.cs" />
     <Compile Include="Models\DTO\Dividend.cs" />
     <Compile Include="Models\DTO\Stocks.cs" />
@@ -286,6 +293,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>stockDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Div_Add_Form.resx">
+      <DependentUpon>Div_Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Asset_Form.resx">
       <DependentUpon>Asset_Form.cs</DependentUpon>
     </EmbeddedResource>

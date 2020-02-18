@@ -78,5 +78,12 @@ namespace stock_div.Forms
             this.Hide();
 
         }
+        private void btn_div_add_Click(object sender, EventArgs e)
+        {
+            AutoClosingMessageBox.Show(Messages.HISTORY_CONNECT_MSG, " ", 2000);
+            Div_Add_Form divAddForm = new Div_Add_Form();
+            divAddForm.Show();
+            this.Hide();
+        }
     }
 }

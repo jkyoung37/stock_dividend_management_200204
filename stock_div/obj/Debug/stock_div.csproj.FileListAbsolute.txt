@@ -168,3 +168,4 @@ C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Apple3270\source\repos\jkyoung37\stock_dividend_management_200204\stock_div\obj\Debug\stock_div.Forms.Div_Add_Form.resources

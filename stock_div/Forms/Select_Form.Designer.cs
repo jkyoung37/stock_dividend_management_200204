@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Select_Form));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_asset = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_delete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_div_add = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_add = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_history = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_sign_out = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lb_name = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,13 +53,39 @@
             this.panel1.Controls.Add(this.bunifuThinButton22);
             this.panel1.Controls.Add(this.btn_asset);
             this.panel1.Controls.Add(this.btn_delete);
-            this.panel1.Controls.Add(this.bunifuThinButton21);
+            this.panel1.Controls.Add(this.btn_div_add);
             this.panel1.Controls.Add(this.btn_add);
             this.panel1.Controls.Add(this.btn_history);
             this.panel1.Location = new System.Drawing.Point(12, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(445, 322);
             this.panel1.TabIndex = 0;
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 3;
+            this.bunifuThinButton22.ActiveCornerRadius = 1;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.DimGray;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Dividend Asset";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 1;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.SteelBlue;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SteelBlue;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(240, 169);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(167, 54);
+            this.bunifuThinButton22.TabIndex = 5;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.btn_asset_Click);
             // 
             // btn_asset
             // 
@@ -112,6 +138,32 @@
             this.btn_delete.TabIndex = 5;
             this.btn_delete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
+            // btn_div_add
+            // 
+            this.btn_div_add.ActiveBorderThickness = 3;
+            this.btn_div_add.ActiveCornerRadius = 1;
+            this.btn_div_add.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btn_div_add.ActiveForecolor = System.Drawing.Color.DimGray;
+            this.btn_div_add.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btn_div_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btn_div_add.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_div_add.BackgroundImage")));
+            this.btn_div_add.ButtonText = "Dividend Add";
+            this.btn_div_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_div_add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_div_add.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_div_add.IdleBorderThickness = 1;
+            this.btn_div_add.IdleCornerRadius = 1;
+            this.btn_div_add.IdleFillColor = System.Drawing.Color.SteelBlue;
+            this.btn_div_add.IdleForecolor = System.Drawing.SystemColors.Window;
+            this.btn_div_add.IdleLineColor = System.Drawing.Color.SteelBlue;
+            this.btn_div_add.Location = new System.Drawing.Point(240, 93);
+            this.btn_div_add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_div_add.Name = "btn_div_add";
+            this.btn_div_add.Size = new System.Drawing.Size(167, 54);
+            this.btn_div_add.TabIndex = 5;
+            this.btn_div_add.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_div_add.Click += new System.EventHandler(this.btn_div_add_Click);
             // 
             // btn_add
             // 
@@ -213,58 +265,6 @@
             this.lb_name.TabIndex = 2;
             this.lb_name.Text = "name";
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 3;
-            this.bunifuThinButton21.ActiveCornerRadius = 1;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.DimGray;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Dividend Add";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 1;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.SteelBlue;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SteelBlue;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(240, 93);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(167, 54);
-            this.bunifuThinButton21.TabIndex = 5;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.btn_add_Click);
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 3;
-            this.bunifuThinButton22.ActiveCornerRadius = 1;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.DimGray;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Dividend Asset";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 1;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.SteelBlue;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SteelBlue;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(240, 169);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(167, 54);
-            this.bunifuThinButton22.TabIndex = 5;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton22.Click += new System.EventHandler(this.btn_asset_Click);
-            // 
             // Select_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -297,6 +297,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_sign_out;
         private Bunifu.Framework.UI.BunifuCustomLabel lb_name;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_div_add;
     }
 }

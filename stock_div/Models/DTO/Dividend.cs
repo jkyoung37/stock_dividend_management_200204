@@ -17,18 +17,11 @@ namespace stock_div.Models.DTO
         {
         }
 
-        public Dividend(Decimal price)
+        public Dividend(Decimal price, DateTime date)
         {
             this.Price = price;
-            this.CreateAt = DateTime.Now;
+            this.CreateAt = date;
             this.User = Utilities.User.Email;
-        }
-
-        public Dividend(Decimal price, String user)
-        {
-            this.Price = price;
-            this.CreateAt = DateTime.Now;
-            this.User = user;
         }
 
         [Key]
